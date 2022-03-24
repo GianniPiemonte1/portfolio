@@ -11118,7 +11118,7 @@ p {
 }
 
 .page-section {
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 
 .page-section h2.section-heading,
@@ -11306,7 +11306,7 @@ header.masthead .masthead-heading {
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: white;
 }
 
