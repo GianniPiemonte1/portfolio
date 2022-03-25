@@ -297,7 +297,7 @@ pre {
     margin-top: 0;
     margin-bottom: 1rem;
     overflow: auto;
-    font-size: 0.875em;
+    font-size: 100%;
 }
 
 pre code {
@@ -11668,5 +11668,5 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 code.language-python {
-    text-align: left;
+    text-align: ;
 }

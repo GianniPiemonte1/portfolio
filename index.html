@@ -427,7 +427,7 @@
                                             print (status)
                                     </code></pre>
                                 <p>Besides the API-Token we give the Tweepy Stream object our StdOutListener and set a filter to some hashtag we want to track. That's it.</p>
-                                <pre><code class="language-python row justify-content-left">producer = KafkaProducer(bootstrap_servers='YourHostWithKafka:9092', 
+                                <pre><code class="language-python">producer = KafkaProducer(bootstrap_servers='YourHostWithKafka:9092', 
                                         api_version=(0, 10, 1),
                                         value_serializer=lambda m: json.dumps(m).encode('ascii'))
                                     
@@ -441,7 +441,7 @@
                                 <p>To consume the tweets we can use a boring Python Kafka-Consumer or a cool PySpark-Consumer processing the tweets inside a cluster. The code of the second option you can find inside <a href="/code/twittersparkconsumer.py">twittersparkconsumer.py</a>.</p>
                                 <p>First of all we create a SparkContext with our appName, then we create the StreamingContext with the SparkContext an let it wait for 3 seconds to consume the next package of tweets. After that we use the StreamingContext
                                     to build a KafkaConsumer and for each RDD we get from the Stream we call the function <em>process()</em>. As long as we don't kill the process tis code will run to infinity (and beyond).</p>
-                                <pre><code class="language-python  row justify-content-left">sc = SparkContext(appName=&quot;PythonStreaming&quot;)
+                                <pre><code class="language-python">sc = SparkContext(appName=&quot;PythonStreaming&quot;)
                                     ssc = StreamingContext(sc, 3)
                                       
                                     kafkaStream = KafkaUtils.createStream(ssc, &quot;YourHostWithKafka:2181&quot;, &quot;consumer-group&quot;, {&quot;tweets&quot;: 1})
@@ -455,12 +455,12 @@
                                 <p>Inside the <em>process()</em> function we process the tweets and for every tweet we call the <em>dosentiment()</em> function othergiving the text of the tweet. The result of this function will added to the data as column
                                     &quot;sentiment&quot;.
                                 </p>
-                                <pre><code class="language-python  row justify-content-left">udf_func = udf(lambda x: dosentiment(x),returnType=StringType())
+                                <pre><code class="language-python">udf_func = udf(lambda x: dosentiment(x),returnType=StringType())
                                     df = df.withColumn(&quot;sentiment&quot;,lit(udf_func(df.text)))
                                     </code></pre>
                                 <p>Inside the <em>dosentiment()</em> function we processing the text of the tweet with the SentimentAnalyzer of NLTK Vader, which gives us some scores other the positive,negative and neutral elements of the text and a calculated
                                     compoundscore from -1 (Negative) to 1 (Positive) and between. These information can be added returned to the tweetdata</p>
-                                <pre><code class="language-python  row justify-content-left">def dosentiment(tweet):
+                                <pre><code class="language-python">def dosentiment(tweet):
                                       scores = dict([('pos', 0), ('neu', 0), ('neg', 0), ('compound', 0)])
                                       sid = SentimentIntensityAnalyzer()
                                       ss = sid.polarity_scores(tweet)
@@ -471,7 +471,7 @@
                                     </code></pre>
                                 <p>Still inside the <em>process()</em> function we can now send our result to elasticsearch and build a dashboard with kibana. The <em>sth2elastic()</em> function out of my <a href="/code/ownelastic.py">ownelastic.py</a> will
                                     do the job for us but don't forget to config your Elastichost in this file.</p>
-                                <pre><code class="language-python  row justify-content-left">results = df.toJSON().map(lambda j: json.loads(j)).collect()
+                                <pre><code class="language-python">results = df.toJSON().map(lambda j: json.loads(j)).collect()
                                     for result in results:
                                           result[&quot;date&quot;]= datetime.strptime(result[&quot;date&quot;],&quot;%Y-%m-%d %H:%M:%S&quot;)
                                           result[&quot;sentiment&quot;]=json.loads(result[&quot;sentiment&quot;])
