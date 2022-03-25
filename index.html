@@ -438,21 +438,7 @@
                                         <span class="pl-k">def</span> <span class="pl-en">on_error</span>(<span class="pl-s1">self</span>, <span class="pl-s1">status</span>):
                                             <span class="pl-en">print</span> (<span class="pl-s1">status</span>)</pre>
                                             <div class="zeroclipboard-container position-absolute right-0 top-0">
-                                                <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="class StdOutListener(StreamListener):
-                                        def on_data(self, data):
-                                            newdata = cleantweet(data)
-                                            producer.send(&quot;tweets&quot;, newdata)
-                                            print(newdata)
-                                            return True
-                                        def on_error(self, status):
-                                            print (status)" tabindex="0" role="button">
-                                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
-                                        <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                                    </svg>
-                                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
-                                        <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
-                                    </svg>
-                                                </clipboard-copy>
+
                                             </div>
                                         </div>
                                         <p dir="auto">Besides the API-Token we give the Tweepy Stream object our StdOutListener and set a filter to some hashtag we want to track. That's it.</p>
@@ -465,24 +451,7 @@
                                     <span class="pl-s1">auth</span>.<span class="pl-en">set_access_token</span>(<span class="pl-s1">access_token</span>, <span class="pl-s1">access_token_secret</span>)
                                     <span class="pl-s1">stream</span> <span class="pl-c1">=</span> <span class="pl-v">Stream</span>(<span class="pl-s1">auth</span>, <span class="pl-s1">l</span>,<span class="pl-s1">tweet_mode</span><span class="pl-c1">=</span><span class="pl-s">'extended'</span>)
                                     <span class="pl-s1">stream</span>.<span class="pl-en">filter</span>(<span class="pl-s1">track</span><span class="pl-c1">=</span>[<span class="pl-s">"#worldkidnessday"</span>], <span class="pl-s1">languages</span><span class="pl-c1">=</span>[<span class="pl-s">"en"</span>])</pre>
-                                            <div class="zeroclipboard-container position-absolute right-0 top-0">
-                                                <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="producer = KafkaProducer(bootstrap_servers='YourHostWithKafka:9092', 
-                                        api_version=(0, 10, 1),
-                                        value_serializer=lambda m: json.dumps(m).encode('ascii'))
-                                    
-                                    l = StdOutListener()
-                                    auth = OAuthHandler(consumer_key, consumer_secret)
-                                    auth.set_access_token(access_token, access_token_secret)
-                                    stream = Stream(auth, l,tweet_mode='extended')
-                                    stream.filter(track=[&quot;#worldkidnessday&quot;], languages=[&quot;en&quot;])" tabindex="0" role="button">
-                                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
-                                        <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                                    </svg>
-                                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
-                                        <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
-                                    </svg>
-                                                </clipboard-copy>
-                                            </div>
+                                            <div class="zeroclipboard-container position-absolute right-0 top-0"></div>
                                         </div>
                                         <h1 dir="auto"><a id="user-content-step-22---consume-the-tweets" class="anchor" aria-hidden="true" href="#step-22---consume-the-tweets"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Step
                                             2/2 - Consume the tweets</h1>
@@ -500,23 +469,7 @@
                                     <span class="pl-s1">ssc</span>.<span class="pl-en">start</span>()
                                     <span class="pl-s1">ssc</span>.<span class="pl-en">awaitTermination</span>()</pre>
                                             <div class="zeroclipboard-container position-absolute right-0 top-0">
-                                                <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="sc = SparkContext(appName=&quot;PythonStreaming&quot;)
-                                    ssc = StreamingContext(sc, 3)
-                                      
-                                    kafkaStream = KafkaUtils.createStream(ssc, &quot;YourHostWithKafka:2181&quot;, &quot;consumer-group&quot;, {&quot;tweets&quot;: 1})
-                                    lines = kafkaStream.map(lambda x: json.loads(x[1]))
-                                    
-                                    lines.foreachRDD(process)
-                                    
-                                    ssc.start()
-                                    ssc.awaitTermination()" tabindex="0" role="button">
-                                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
-                                        <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                                    </svg>
-                                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
-                                        <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
-                                    </svg>
-                                                </clipboard-copy>
+
                                             </div>
                                         </div>
                                         <p dir="auto">Inside the <em>process()</em> function we process the tweets and for every tweet we call the <em>dosentiment()</em> function othergiving the text of the tweet. The result of this function will added to the data
@@ -525,15 +478,7 @@
                                         <div class="highlight highlight-source-python position-relative overflow-auto"><pre><span class="pl-s1">udf_func</span> <span class="pl-c1">=</span> <span class="pl-en">udf</span>(<span class="pl-k">lambda</span> <span class="pl-s1">x</span>: <span class="pl-en">dosentiment</span>(<span class="pl-s1">x</span>),<span class="pl-s1">returnType</span><span class="pl-c1">=</span><span class="pl-v">StringType</span>())
                                     <span class="pl-s1">df</span> <span class="pl-c1">=</span> <span class="pl-s1">df</span>.<span class="pl-en">withColumn</span>(<span class="pl-s">"sentiment"</span>,<span class="pl-en">lit</span>(<span class="pl-en">udf_func</span>(<span class="pl-s1">df</span>.<span class="pl-s1">text</span>)))</pre>
                                             <div class="zeroclipboard-container position-absolute right-0 top-0">
-                                                <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="udf_func = udf(lambda x: dosentiment(x),returnType=StringType())
-                                    df = df.withColumn(&quot;sentiment&quot;,lit(udf_func(df.text)))" tabindex="0" role="button">
-                                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
-                                        <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                                    </svg>
-                                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
-                                        <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
-                                    </svg>
-                                                </clipboard-copy>
+
                                             </div>
                                         </div>
                                         <p dir="auto">Inside the <em>dosentiment()</em> function we processing the text of the tweet with the SentimentAnalyzer of NLTK Vader, which gives us some scores other the positive,negative and neutral elements of the text and
@@ -547,21 +492,7 @@
                                     
                                       <span class="pl-k">return</span> <span class="pl-s1">json</span>.<span class="pl-en">dumps</span>(<span class="pl-s1">scores</span>)</pre>
                                             <div class="zeroclipboard-container position-absolute right-0 top-0">
-                                                <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="def dosentiment(tweet):
-                                      scores = dict([('pos', 0), ('neu', 0), ('neg', 0), ('compound', 0)])
-                                      sid = SentimentIntensityAnalyzer()
-                                      ss = sid.polarity_scores(tweet)
-                                      for k in sorted(ss):
-                                          scores[k] += ss[k]
-                                    
-                                      return json.dumps(scores)" tabindex="0" role="button">
-                                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
-                                        <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                                    </svg>
-                                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
-                                        <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
-                                    </svg>
-                                                </clipboard-copy>
+
                                             </div>
                                         </div>
                                         <p dir="auto">Still inside the <em>process()</em> function we can now send our result to elasticsearch and build a dashboard with kibana. The <em>sth2elastic()</em> function out of my <a href="/giannipiemonte/Project_Sentiment_Analysis/blob/main/code/ownelastic.py">ownelastic.py</a>                                            will do the job for us but don't forget to config your Elastichost in this file.</p>
@@ -571,18 +502,7 @@
                                           <span class="pl-s1">result</span>[<span class="pl-s">"sentiment"</span>]<span class="pl-c1">=</span><span class="pl-s1">json</span>.<span class="pl-en">loads</span>(<span class="pl-s1">result</span>[<span class="pl-s">"sentiment"</span>])
                                           <span class="pl-en">sth2elastic</span>(<span class="pl-s1">results</span>,<span class="pl-s">"tweets"</span>,<span class="pl-s">"doc"</span>)</pre>
                                             <div class="zeroclipboard-container position-absolute right-0 top-0">
-                                                <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="results = df.toJSON().map(lambda j: json.loads(j)).collect()
-                                    for result in results:
-                                          result[&quot;date&quot;]= datetime.strptime(result[&quot;date&quot;],&quot;%Y-%m-%d %H:%M:%S&quot;)
-                                          result[&quot;sentiment&quot;]=json.loads(result[&quot;sentiment&quot;])
-                                          sth2elastic(results,&quot;tweets&quot;,&quot;doc&quot;)" tabindex="0" role="button">
-                                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
-                                        <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                                    </svg>
-                                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
-                                        <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
-                                    </svg>
-                                                </clipboard-copy>
+
                                             </div>
                                         </div>
                                         <p dir="auto">Now the Tweets are saved inside the "tweets" Index of Elasticsearch and you can build a dashboard that refreshes every few seconds.</p>
