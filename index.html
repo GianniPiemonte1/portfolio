@@ -533,10 +533,132 @@
                                 <p class="item-intro text-muted">La totalité ici :
                                     <a href="https://github.com/giannipiemonte/Fashion_MNIST"> GitHub</a> Techno & Lib utilisées : CNN | Keras | Sklearn | Scipy | Seaborn </p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3_Fashion MNIST 2.gif" alt="..." />
-                                <p></p>
+                                <div class="justify-content-left">
+                                    <h4 id=" fashion-mnist ">Fashion-MNIST</h4>
+                                    <p>
+                                        <details>
+                                            <summary>Table of Contents</summary>
+                                            <p></p>
+                                            <ul>
+                                                <li><a href="#why-we-made-fashion-mnist ">Why we made Fashion-MNIST</a></li>
+                                                <li><a href="#get-the-data ">Get the Data</a></li>
+                                                <li><a href="#usage ">Usage</a></li>
+                                                <li><a href="#benchmark ">Benchmark</a></li>
+                                                <li><a href="#visualization ">Visualization</a></li>
+                                                <li><a href="#contributing ">Contributing</a></li>
+                                                <li><a href="#contact ">Contact</a></li>
+                                                <li><a href="#citing-fashion-mnist ">Citing Fashion-MNIST</a></li>
+                                                <li><a href="#license ">License</a>
+                                    </p>
+                                    </details>
+                                    <p></p>
+                                    </li>
+                                    </ul>
+                                    <p><code>Fashion-MNIST</code> is a dataset of <a href="https://jobs.zalando.com/tech/ ">Zalando</a>&#39;s article images—consisting of a training set of 60,000 examples and a test set of 10,000 examples. Each example is
+                                        a 28x28 grayscale image, associated with a label from 10 classes. We intend <code>Fashion-MNIST</code> to serve as a direct <strong>drop-in replacement</strong> for the original <a href="http://yann.lecun.com/exdb/mnist/ ">MNIST dataset</a>                                        for benchmarking machine learning algorithms. It shares the same image size and structure of training and testing splits.</p>
+                                    <p>Here&#39;s an example of how the data looks (<em>each class takes three-rows</em>):</p>
+                                    <p><img src="fashion-mnist-sprite.png " alt=" "></p>
+                                    <p><img src="embedding.gif " width="100% "></p>
+                                    <h2 id="why-we-made-fashion-mnist ">Why we made Fashion-MNIST</h2>
+                                    <p>The original <a href="http://yann.lecun.com/exdb/mnist/ ">MNIST dataset</a> contains a lot of handwritten digits. Members of the AI/ML/Data Science community love this dataset and use it as a benchmark to validate their
+                                        algorithms. In fact, MNIST is often the first dataset researchers try. <em>&quot;If it doesn&#39;t work on MNIST, it <strong>won&#39;t work</strong> at all&quot;</em>, they said. <em>&quot;Well, if it does work on MNIST, it may still fail on others.&quot;</em>                                        </p>
+                                    <h3 id="to-serious-machine-learning-researchers ">To Serious Machine Learning Researchers</h3>
+                                    <p>Seriously, we are talking about replacing MNIST. Here are some good reasons:</p>
+                                    <ul>
+                                        <li><strong>MNIST is too easy.</strong> Convolutional nets can achieve 99.7% on MNIST. Classic machine learning algorithms can also achieve 97% easily. Check out <a href="http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/ ">our side-by-side benchmark for Fashion-MNIST vs. MNIST</a>,
+                                            and read &quot;<a href="https://gist.github.com/dgrtwo/aaef94ecc6a60cd50322c0054cc04478 ">Most pairs of MNIST digits can be distinguished pretty well by just one pixel</a>.&quot;</li>
+                                        <li><strong>MNIST is overused.</strong> In <a href="https://twitter.com/goodfellow_ian/status/852591106655043584 ">this April 2017 Twitter thread</a>, Google Brain research scientist and deep learning expert Ian Goodfellow
+                                            calls for people to move away from MNIST.</li>
+                                        <li><strong>MNIST can not represent modern CV tasks</strong>, as noted in <a href="https://twitter.com/fchollet/status/852594987527045120 ">this April 2017 Twitter thread</a>, deep learning expert/Keras author François
+                                            Chollet.
+                                        </li>
+                                    </ul>
+                                    <h2 id="get-the-data ">Get the Data</h2>
+                                    <p><a href="#loading-data-with-other-machine-learning-libraries ">Many ML libraries</a> already include Fashion-MNIST data/API, give it a try!</p>
+                                    <p>You can use direct links to download the dataset. The data is stored in the <strong>same</strong> format as the original <a href="http://yann.lecun.com/exdb/mnist/ ">MNIST data</a>.</p>
+                                    <p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream | Name | Content | Examples | Size | Link | MD5 Checksum| | --- | --- |--- | --- |--- |--- | | <code>train-images-idx3-ubyte.gz</code> | training set images | 60,000|26
+                                        MBytes | <a href="http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz ">Download</a>|<code>8d4fb7e6c68d591d4c3dfef9ec88bf0d</code>| | <code>train-labels-idx1-ubyte.gz</code> | training
+                                        set labels |60,000|29 KBytes | <a href="http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz
+                                        ">Download</a>|<code>25c81989df183df01b3e8a0aad5dffbe</code>| | <code>t10k-images-idx3-ubyte.gz</code> | test set images | 10,000|4.3 MBytes | <a href="http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz
+                                        ">Download</a>|<code>bef4ecab320f06d8554ea6380940ec79</code>| | <code>t10k-labels-idx1-ubyte.gz</code> | test set labels | 10,000| 5.1 KBytes | <a href="http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz ">Download</a>|<code>bb300cfdad3c16e7a12a480ee83cd310</code>|</p>
+                                    <p>Alternatively, you can clone this GitHub repository; the dataset appears under <code>data/fashion</code>. This repo also contains some scripts for benchmark and visualization.</p>
+                                    <pre><code class="lang-bash ">git <span class="hljs-keyword ">clone</span> <span class="hljs-title ">git</span>@github.com:zalandoresearch/fashion-mnist.git
+    </code></pre>
+                                    <h3 id="labels ">Labels</h3>
+                                    <p>Each training and test example is assigned to one of the following labels:</p>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Label</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0</td>
+                                                <td>T-shirt/top</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Trouser</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Pullover</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Dress</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Coat</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Sandal</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Shirt</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>Sneaker</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>Bag</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>Ankle boot</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h2 id="usage ">Usage</h2>
+                                    <h3 id="loading-data-with-python-requires-numpy-http-www-numpy-org- ">Loading data with Python (requires <a href="http://www.numpy.org/ ">NumPy</a>)</h3>
+                                    <p>Use <code>utils/mnist_reader</code> in this repo:</p>
+                                    <pre><code class="lang-python "><span class="hljs-keyword ">import</span> mnist_reader
+    <span class="hljs-type ">X_train</span>, y_train = mnist_reader.load_mnist('<span class="hljs-class "><span class="hljs-keyword ">data</span>/fashion', kind='train')</span>
+    <span class="hljs-type ">X_test</span>, y_test = mnist_reader.load_mnist('<span class="hljs-class "><span class="hljs-keyword ">data</span>/fashion', kind='t10k')</span>
+    </code></pre>
+                                    <h3 id="loading-data-with-tensorflow ">Loading data with Tensorflow</h3>
+                                    <p>Make sure you have <a href="#get-the-data ">downloaded the data</a> and placed it in <code>data/fashion</code>. Otherwise, <em>Tensorflow will download and use the original MNIST.</em></p>
+                                    <pre><code class="lang-python "><span class="hljs-title ">from</span> tensorflow.examples.tutorials.mnist <span class="hljs-keyword ">import</span> input_data
+    <span class="hljs-class "><span class="hljs-keyword ">data</span> = input_data.read_data_sets('<span class="hljs-title ">data</span>/<span class="hljs-title ">fashion'</span>)</span>
+    
+    <span class="hljs-class "><span class="hljs-keyword ">data</span>.train.next_batch(<span class="hljs-type ">BATCH_SIZE</span>)</span>
+    </code></pre>
+                                    <p>Note, Tensorflow supports passing in a source url to the <code>read_data_sets</code>. You may use: </p>
+                                    <pre><code class="lang-python "><span class="hljs-attr ">data</span> = input_data.read_data_sets(<span class="hljs-string ">'data/fashion'</span>, source_url=<span class="hljs-string ">'http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/'</span>)
+    </code></pre>
+                                    <p>Also, an official Tensorflow tutorial of using <code>tf.keras</code>, a high-level API to train Fashion-MNIST <a href="https://www.tensorflow.org/tutorials/keras/classification ">can be found here</a>.</p>
+                                </div>
 
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-times me-1"></i>
+
+                                <button class="btn btn-primary btn-xl text-uppercase " data-bs-dismiss="modal " type="button ">
+                                        <i class="fas fa-times me-1 "></i>
                                         Close Project
                                     </button>
                             </div>
@@ -548,14 +670,14 @@
     </div>
 
     <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js "></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js "></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js "></script>
 </body>
 
 </html>
