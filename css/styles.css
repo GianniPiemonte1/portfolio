@@ -7685,6 +7685,7 @@ fieldset:disabled .btn {
 
 .justify-content-left {
     justify-content: left !important;
+    text-align: left;
 }
 
 .justify-content-between {
