@@ -298,6 +298,7 @@ pre {
     margin-bottom: 1rem;
     overflow: auto;
     font-size: 100%;
+    background-color: var(--color-canvas-subtle);
 }
 
 pre code {
