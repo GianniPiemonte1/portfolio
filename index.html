@@ -382,7 +382,7 @@
                                 </p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1_Twitter2.gif" alt="..." />
 
-                                <h1>Twitterstream Sentiment-Analysis with Kafka, Spark &amp; Elasticsearch</h1>
+                                <h2>Twitterstream Sentiment-Analysis with Kafka, Spark &amp; Elasticsearch</h2>
                                 <p>Reading the Twitterstream from the Twitter-API with Kafka and stream them into a Spark-Cluster to process it</p>
                                 <h1>Things you need</h1>
                                 <ul>
@@ -398,7 +398,7 @@
                                     <li>Elasticsearch</li>
                                     <li>NLTK with VADER</li>
                                 </ul>
-                                <h1>Base Architecture</h1>
+                                <h2>Base Architecture</h2>
                                 <p>Let's dive into the Base Architecture to get an overview of the tools. It's not that complicated.</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/modal portfolio/TwitterstreamArch.jpg" alt="..." />
                                 <p>At the beginning of our journey we have the twitterusers tweeting some posts with some hashtags. Roumors says there are ~6000 per second. Twitter offers an API to query them in past for some days or to read the livestream.</p>
@@ -407,7 +407,7 @@
                                     into Spark RDDs to process them.</p>
                                 <p>Inside the Spark-Consumer we let the NLTK Vader package doing the Sentiment-Magic and add that result to the data of the tweet.</p>
                                 <p>In the end of a consumingloop we can send the data to Elasticsearch to build some fancy dashboards with Kibana to show the result of our sentimentanalysis and proof that the tweets are beeing processed in realtime.</p>
-                                <h1>Step 1/2 - Read the stream</h1>
+                                <h2>Step 1/2 - Read the stream</h2>
                                 <p>To swim with the twitterstream we need some tools:</p>
                                 <ul>
                                     <li>your personal API-Token you can get from Twitter to call the API</li>
@@ -437,7 +437,7 @@
                                     stream = Stream(auth, l,tweet_mode='extended')
                                     stream.filter(track=[&quot;#worldkidnessday&quot;], languages=[&quot;en&quot;])
                                     </code></pre>
-                                <h1>Step 2/2 - Consume the tweets</h1>
+                                <h2>Step 2/2 - Consume the tweets</h2>
                                 <p>To consume the tweets we can use a boring Python Kafka-Consumer or a cool PySpark-Consumer processing the tweets inside a cluster. The code of the second option you can find inside <a href="/code/twittersparkconsumer.py">twittersparkconsumer.py</a>.</p>
                                 <p>First of all we create a SparkContext with our appName, then we create the StreamingContext with the SparkContext an let it wait for 3 seconds to consume the next package of tweets. After that we use the StreamingContext
                                     to build a KafkaConsumer and for each RDD we get from the Stream we call the function <em>process()</em>. As long as we don't kill the process tis code will run to infinity (and beyond).</p>
