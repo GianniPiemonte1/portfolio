@@ -7683,6 +7683,10 @@ fieldset:disabled .btn {
     justify-content: center !important;
 }
 
+.justify-content-left {
+    justify-content: left !important;
+}
+
 .justify-content-between {
     justify-content: space-between !important;
 }
