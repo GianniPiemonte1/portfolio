@@ -14195,13 +14195,6 @@ span.linenos.special {
 | The full license is in the file LICENSE, distributed with this software.
 |----------------------------------------------------------------------------*/
 
-*,
-*::before,
-*::after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
 body {
     font-size: 14px;
     font-weight: 400;
