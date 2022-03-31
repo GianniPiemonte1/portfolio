@@ -11445,7 +11445,7 @@ header.masthead .masthead-heading {
 .timeline>li .timeline-image {
     position: absolute;
     z-index: 100;
-    left: 0;
+    left: -6px;
     width: 80px;
     height: 80px;
     margin-left: 0;
@@ -28199,62 +28199,6 @@ span.bp3-popover-target {
 |----------------------------------------------------------------------------*/
 
 
-/* Sibling imports */
-
-
-/* Override Blueprint's _reset.scss styles */
-
-html {
-    box-sizing: unset;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: unset;
-}
-
-body {
-    color: unset;
-    font-family: var(--jp-ui-font-family);
-}
-
-p {
-    margin-top: unset;
-    margin-bottom: unset;
-}
-
-small {
-    font-size: unset;
-}
-
-strong {
-    font-weight: unset;
-}
-
-
-/* Override Blueprint's _typography.scss styles */
-
-a {
-    text-decoration: unset;
-    color: unset;
-}
-
-a:hover {
-    text-decoration: unset;
-    color: unset;
-}
-
-
-/* Override Blueprint's _accessibility.scss styles */
-
-:focus {
-    outline: unset;
-    outline-offset: unset;
-    -moz-outline-radius: unset;
-}
-
-
 /* Styles for ui-components */
 
 .jp-Button {
@@ -32040,11 +31984,6 @@ body[data-format='mobile'] .jp-InputPrompt {
     color: var(--jp-warn-color1);
 }
 
-.jp-Notebook .jp-Cell.jp-mod-dirty .jp-InputPrompt:before {
-    color: var(--jp-warn-color1);
-    content: '•';
-}
-
 .jp-Notebook .jp-Cell.jp-mod-active.jp-mod-dirty .jp-Collapser {
     background: var(--jp-warn-color1);
 }
@@ -32610,10 +32549,6 @@ all of MD as it is not optimized for dense, information rich UIs.
     --jp-icon-contrast-color1: var(--md-green-600);
     --jp-icon-contrast-color2: var(--md-pink-600);
     --jp-icon-contrast-color3: var(--md-blue-600);
-}
-
-* {
-    -webkit-print-color-adjust: exact;
 }
 
 
