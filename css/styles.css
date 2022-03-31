@@ -11424,8 +11424,7 @@ header.masthead .masthead-heading {
 .timeline>li .timeline-panel {
     position: relative;
     float: right;
-    width: 100%;
-    padding: 0 20px 0 100px;
+    padding: 0 20px 0 150px;
     text-align: left;
 }
 
@@ -11466,7 +11465,7 @@ header.masthead .masthead-heading {
 
 .timeline>li.timeline-inverted>.timeline-panel {
     float: right;
-    padding: 0 20px 0 100px;
+    padding: 0 20px 0 150px;
     text-align: left;
 }
 
