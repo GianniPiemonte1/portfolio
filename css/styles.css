@@ -14403,11 +14403,6 @@ h6.bp3-heading,
     font-size: 12px;
 }
 
-a {
-    color: #106ba3;
-    text-decoration: none;
-}
-
 a:hover {
     color: #106ba3;
     cursor: pointer;
