@@ -1585,8 +1585,8 @@
             </div>
         </div>
     </div>
-    <!-- Portfolio item 4 modal popup-->
-    <div class="portfolio-modal modal fade " id="portfolioModal4 " tabindex="-1 " role="dialog " aria-hidden="true ">
+    <!-- Portfolio item 1 modal popup-->
+    <div class="portfolio-modal modal fade " id="portfolioModal1 " tabindex="-1 " role="dialog " aria-hidden="true ">
         <div class="modal-dialog ">
             <div class="modal-content ">
                 <div class="close-modal " data-bs-dismiss="modal "><img src="assets/img/close-icon.svg " alt="Close modal " /></div>
@@ -1595,11 +1595,161 @@
                         <div class="col-lg-8 ">
                             <div class="modal-body ">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase ">Exemple Power BI - Vision métier gestion Télécom</h2>
+                                <h2 class="text-uppercase ">Twitterstream Sentiment-Analysis</h2>
                                 <p class="item-intro text-muted "> La totalité ici :
                                     <a href="https://github.com/giannipiemonte/Project_Sentiment_Analysis "> GitHub</a> Techno & Lib utilisées : Tweepy | Kafka-Python | Pyspark | Elasticsearch | NLTK with VADER
                                 </p>
-                                <div> <iframe src="https://onedrive.live.com/embed?resid=8A5F7D8E37D079EC%2151751&amp;authkey=%21AJHD3ly5--zBbpk&amp;em=2&amp;wdAr=1.7291666666666667" width="476px" height="288px" frameborder="0">Ceci est un document <a target="_blank" href="https://office.com">Microsoft Office</a> incorporé, avec <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                                <img class="img-fluid d-block mx-auto " src="assets/img/portfolio/1_Twitter2.gif " alt="... " />
+                                <div class="justify-content-left ">
+                                    <article class="markdown-body entry-content container-lg " itemprop="text ">
+                                        <h1 dir="auto "><a id="user-content-twitterstream-sentiment-analysis-with-kafka-spark--elasticsearch " class="anchor " aria-hidden="true " href="#twitterstream-sentiment-analysis-with-kafka-spark--elasticsearch
+                                "><svg class="octicon octicon-link " viewBox="0 0 16 16 " version="1.1 " width="16 " height="16 " aria-hidden="true "><path fill-rule="evenodd " d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75
+                                0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25
+                                1.25a2 2 0 01-2.83 0z "></path></svg></a>Twitterstream Sentiment-Analysis with Kafka, Spark &amp; Elasticsearch</h1>
+                                        <p dir="auto ">Reading the Twitterstream from the Twitter-API with Kafka and stream them into a Spark-Cluster to process it</p>
+                                        <h1 dir="auto "><a id="user-content-things-you-need " class="anchor " aria-hidden="true " href="#things-you-need "><svg class="octicon octicon-link " viewBox="0 0 16 16 " version="1.1 " width="16 " height="16
+                                " aria-hidden="true "><path fill-rule="evenodd " d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2
+                                0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z "></path></svg></a>Things you need</h1>
+                                        <ul dir="auto ">
+                                            <li>Installed <a href="https://kafka.apache.org/ " rel="nofollow ">Apache Kafka</a></li>
+                                            <li>Installed <a href="https://spark.apache.org/ " rel="nofollow ">Apache Spark</a></li>
+                                            <li>Installed <a href="https://www.elastic.co/de/ " rel="nofollow ">Elasticsearch &amp; Kibana</a> (If you want to)</li>
+                                        </ul>
+                                        <p dir="auto ">Twitter Modules</p>
+                                        <ul dir="auto ">
+                                            <li>Tweepy (And your own pair of API Keys from Twitter)</li>
+                                            <li>Kafka-Python</li>
+                                            <li>Pyspark</li>
+                                            <li>Elasticsearch</li>
+                                            <li>NLTK with VADER</li>
+                                        </ul>
+                                        <h1 dir="auto "><a id="user-content-base-architecture " class="anchor " aria-hidden="true " href="#base-architecture "><svg class="octicon octicon-link " viewBox="0 0 16 16 " version="1.1 " width="16
+                                " height="16 " aria-hidden="true "><path fill-rule="evenodd " d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69
+                                9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z "></path></svg></a>Base Architecture
+                                        </h1>
+                                        <p dir="auto ">Let's dive into the Base Architecture to get an overview of the tools. It's not that complicated.</p>
+                                        <p dir="auto "><br>
+                                            <a target="_blank " rel="noopener noreferrer " href="/giannipiemonte/Project_Sentiment_Analysis/blob/main/TwitterstreamArch.jpg "><img src="assets/img/modal portfolio/TwitterstreamArch.jpg " width="800
+                                " height="auto " style="max-width: 100%; "></a>
+                                        </p>
+                                        <p dir="auto ">At the beginning of our journey we have the twitterusers tweeting some posts with some hashtags. Roumors says there are ~6000 per second. Twitter offers an API to query them in past for some days or to read the
+                                            livestream.
+                                        </p>
+                                        <p dir="auto ">With a Kafka Producer written in Python (use Java or Scala if you want to) we reading the stream and after some cleaning we send the relevant part of the tweet to a topic at the Kafkaserver.</p>
+                                        <p dir="auto ">While the tweets getting send to the topic the Spark-Consumer waits at the other side of the Kafka Messagequeue. The Spark-Streaming libary has some KafkaUtils to collect the messages from the Kafkaserver and return
+                                            them into Spark RDDs to process them.</p>
+                                        <p dir="auto ">Inside the Spark-Consumer we let the NLTK Vader package doing the Sentiment-Magic and add that result to the data of the tweet.</p>
+                                        <p dir="auto ">In the end of a consumingloop we can send the data to Elasticsearch to build some fancy dashboards with Kibana to show the result of our sentimentanalysis and proof that the tweets are beeing processed in realtime.</p>
+                                        <h1 dir="auto "><a id="user-content-step-12---read-the-stream " class="anchor " aria-hidden="true " href="#step-12---read-the-stream "><svg class="octicon octicon-link " viewBox="0 0 16 16 " version="1.1
+                                " width="16 " height="16 " aria-hidden="true "><path fill-rule="evenodd " d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25
+                                1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z "></path></svg></a>Step 1/2 - Read
+                                            the stream</h1>
+                                        <p dir="auto ">To swim with the twitterstream we need some tools:</p>
+                                        <ul dir="auto ">
+                                            <li>your personal API-Token you can get from Twitter to call the API</li>
+                                            <li>the Python module Tweepy to access the Stream from Python</li>
+                                            <li>Kafka-Python module to send the tweets to the Kafkaserver</li>
+                                        </ul>
+                                        <p dir="auto ">You can find the code here <a href="/giannipiemonte/Project_Sentiment_Analysis/blob/main/code/twitterstreamproducer.py ">twitterstreamproducer.py</a></p>
+                                        <p dir="auto ">At first we define a StdOutListener who listenes on the Stream the function <em>on_data()</em> defines what we want to do with every tweet we get. The function <em>cleantweet()</em> cleans every tweet by just extracting
+                                            the user, date and the text. After this the tweet is send to the topic "tweets ".</p>
+                                        <div class="highlight highlight-source-python position-relative overflow-auto "><pre><span class="pl-k ">class</span> <span class="pl-v ">StdOutListener</span>(<span class="pl-v ">StreamListener</span>):
+                                        <span class="pl-k ">def</span> <span class="pl-en ">on_data</span>(<span class="pl-s1 ">self</span>, <span class="pl-s1 ">data</span>):
+                                            <span class="pl-s1 ">newdata</span> <span class="pl-c1 ">=</span> <span class="pl-en ">cleantweet</span>(<span class="pl-s1 ">data</span>)
+                                            <span class="pl-s1 ">producer</span>.<span class="pl-en ">send</span>(<span class="pl-s ">"tweets "</span>, <span class="pl-s1 ">newdata</span>)
+                                            <span class="pl-en ">print</span>(<span class="pl-s1 ">newdata</span>)
+                                            <span class="pl-k ">return</span> <span class="pl-c1 ">True</span>
+                                        <span class="pl-k ">def</span> <span class="pl-en ">on_error</span>(<span class="pl-s1 ">self</span>, <span class="pl-s1 ">status</span>):
+                                            <span class="pl-en ">print</span> (<span class="pl-s1 ">status</span>)</pre>
+                                            <div class="zeroclipboard-container position-absolute right-0 top-0 ">
+
+                                            </div>
+                                        </div>
+                                        <p dir="auto ">Besides the API-Token we give the Tweepy Stream object our StdOutListener and set a filter to some hashtag we want to track. That's it.</p>
+                                        <div class="highlight highlight-source-python position-relative overflow-auto "><pre><span class="pl-s1 ">producer</span> <span class="pl-c1 ">=</span> <span class="pl-v ">KafkaProducer</span>(<span class="pl-s1
+                                ">bootstrap_servers</span><span class="pl-c1 ">=</span><span class="pl-s ">'YourHostWithKafka:9092'</span>, 
+                                        <span class="pl-s1 ">api_version</span><span class="pl-c1 ">=</span>(<span class="pl-c1 ">0</span>, <span class="pl-c1 ">10</span>, <span class="pl-c1 ">1</span>),
+                                        <span class="pl-s1 ">value_serializer</span><span class="pl-c1 ">=</span><span class="pl-k ">lambda</span> <span class="pl-s1 ">m</span>: <span class="pl-s1 ">json</span>.<span class="pl-en
+                                ">dumps</span>(<span class="pl-s1 ">m</span>).<span class="pl-en ">encode</span>(<span class="pl-s ">'ascii'</span>))
+                                    
+                                    <span class="pl-s1 ">l</span> <span class="pl-c1 ">=</span> <span class="pl-v ">StdOutListener</span>()
+                                    <span class="pl-s1 ">auth</span> <span class="pl-c1 ">=</span> <span class="pl-v ">OAuthHandler</span>(<span class="pl-s1 ">consumer_key</span>, <span class="pl-s1 ">consumer_secret</span>)
+                                    <span class="pl-s1 ">auth</span>.<span class="pl-en ">set_access_token</span>(<span class="pl-s1 ">access_token</span>, <span class="pl-s1 ">access_token_secret</span>)
+                                    <span class="pl-s1 ">stream</span> <span class="pl-c1 ">=</span> <span class="pl-v ">Stream</span>(<span class="pl-s1 ">auth</span>, <span class="pl-s1 ">l</span>,<span class="pl-s1
+                                ">tweet_mode</span><span class="pl-c1 ">=</span><span class="pl-s ">'extended'</span>)
+                                    <span class="pl-s1 ">stream</span>.<span class="pl-en ">filter</span>(<span class="pl-s1 ">track</span><span class="pl-c1 ">=</span>[<span class="pl-s ">"#worldkidnessday "</span>], <span class="pl-s1
+                                ">languages</span><span class="pl-c1 ">=</span>[<span class="pl-s ">"en "</span>])</pre>
+                                            <div class="zeroclipboard-container position-absolute right-0 top-0 "></div>
+                                        </div>
+                                        <h1 dir="auto "><a id="user-content-step-22---consume-the-tweets " class="anchor " aria-hidden="true " href="#step-22---consume-the-tweets "><svg class="octicon octicon-link " viewBox="0 0 16 16 " version="1.1
+                                " width="16 " height="16 " aria-hidden="true "><path fill-rule="evenodd " d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25
+                                1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z "></path></svg></a>Step 2/2 - Consume
+                                            the tweets</h1>
+                                        <p dir="auto ">To consume the tweets we can use a boring Python Kafka-Consumer or a cool PySpark-Consumer processing the tweets inside a cluster. The code of the second option you can find inside <a href="/giannipiemonte/Project_Sentiment_Analysis/blob/main/code/twittersparkconsumer.py ">twittersparkconsumer.py</a>.</p>
+                                        <p dir="auto ">First of all we create a SparkContext with our appName, then we create the StreamingContext with the SparkContext an let it wait for 3 seconds to consume the next package of tweets. After that we use the StreamingContext
+                                            to build a KafkaConsumer and for each RDD we get from the Stream we call the function <em>process()</em>. As long as we don't kill the process tis code will run to infinity (and beyond).</p>
+                                        <div class="highlight highlight-source-python position-relative overflow-auto "><pre><span class="pl-s1 ">sc</span> <span class="pl-c1 ">=</span> <span class="pl-v ">SparkContext</span>(<span class="pl-s1
+                                ">appName</span><span class="pl-c1 ">=</span><span class="pl-s ">"PythonStreaming "</span>)
+                                    <span class="pl-s1 ">ssc</span> <span class="pl-c1 ">=</span> <span class="pl-v ">StreamingContext</span>(<span class="pl-s1 ">sc</span>, <span class="pl-c1 ">3</span>)
+                                      
+                                    <span class="pl-s1 ">kafkaStream</span> <span class="pl-c1 ">=</span> <span class="pl-v ">KafkaUtils</span>.<span class="pl-en ">createStream</span>(<span class="pl-s1 ">ssc</span>, <span class="pl-s ">"YourHostWithKafka:2181
+                                "</span>, <span class="pl-s ">"consumer-group "</span>, {<span class="pl-s ">"tweets "</span>: <span class="pl-c1 ">1</span>})
+                                    <span class="pl-s1 ">lines</span> <span class="pl-c1 ">=</span> <span class="pl-s1 ">kafkaStream</span>.<span class="pl-en ">map</span>(<span class="pl-k ">lambda</span> <span class="pl-s1
+                                ">x</span>: <span class="pl-s1 ">json</span>.<span class="pl-en ">loads</span>(<span class="pl-s1 ">x</span>[<span class="pl-c1 ">1</span>]))
+                                    
+                                    <span class="pl-s1 ">lines</span>.<span class="pl-en ">foreachRDD</span>(<span class="pl-s1 ">process</span>)
+                                    
+                                    <span class="pl-s1 ">ssc</span>.<span class="pl-en ">start</span>()
+                                    <span class="pl-s1 ">ssc</span>.<span class="pl-en ">awaitTermination</span>()</pre>
+                                            <div class="zeroclipboard-container position-absolute right-0 top-0 ">
+
+                                            </div>
+                                        </div>
+                                        <p dir="auto ">Inside the <em>process()</em> function we process the tweets and for every tweet we call the <em>dosentiment()</em> function othergiving the text of the tweet. The result of this function will added to the data
+                                            as column "sentiment ".
+                                        </p>
+                                        <div class="highlight highlight-source-python position-relative overflow-auto "><pre><span class="pl-s1 ">udf_func</span> <span class="pl-c1 ">=</span> <span class="pl-en ">udf</span>(<span class="pl-k
+                                ">lambda</span> <span class="pl-s1 ">x</span>: <span class="pl-en ">dosentiment</span>(<span class="pl-s1 ">x</span>),<span class="pl-s1 ">returnType</span><span class="pl-c1 ">=</span><span class="pl-v ">StringType</span>())
+                                    <span class="pl-s1 ">df</span> <span class="pl-c1 ">=</span> <span class="pl-s1 ">df</span>.<span class="pl-en ">withColumn</span>(<span class="pl-s ">"sentiment "</span>,<span class="pl-en
+                                ">lit</span>(<span class="pl-en ">udf_func</span>(<span class="pl-s1 ">df</span>.<span class="pl-s1 ">text</span>)))</pre>
+                                            <div class="zeroclipboard-container position-absolute right-0 top-0 ">
+
+                                            </div>
+                                        </div>
+                                        <p dir="auto ">Inside the <em>dosentiment()</em> function we processing the text of the tweet with the SentimentAnalyzer of NLTK Vader, which gives us some scores other the positive,negative and neutral elements of the text and
+                                            a calculated compoundscore from -1 (Negative) to 1 (Positive) and between. These information can be added returned to the tweetdata</p>
+                                        <div class="highlight highlight-source-python position-relative overflow-auto "><pre><span class="pl-k ">def</span> <span class="pl-en ">dosentiment</span>(<span class="pl-s1 ">tweet</span>):
+                                      <span class="pl-s1 ">scores</span> <span class="pl-c1 ">=</span> <span class="pl-en ">dict</span>([(<span class="pl-s ">'pos'</span>, <span class="pl-c1 ">0</span>), (<span class="pl-s
+                                ">'neu'</span>, <span class="pl-c1 ">0</span>), (<span class="pl-s ">'neg'</span>, <span class="pl-c1 ">0</span>), (<span class="pl-s ">'compound'</span>, <span class="pl-c1 ">0</span>)])
+                                      <span class="pl-s1 ">sid</span> <span class="pl-c1 ">=</span> <span class="pl-v ">SentimentIntensityAnalyzer</span>()
+                                      <span class="pl-s1 ">ss</span> <span class="pl-c1 ">=</span> <span class="pl-s1 ">sid</span>.<span class="pl-en ">polarity_scores</span>(<span class="pl-s1 ">tweet</span>)
+                                      <span class="pl-k ">for</span> <span class="pl-s1 ">k</span> <span class="pl-c1 ">in</span> <span class="pl-en ">sorted</span>(<span class="pl-s1 ">ss</span>):
+                                          <span class="pl-s1 ">scores</span>[<span class="pl-s1 ">k</span>] <span class="pl-c1 ">+=</span> <span class="pl-s1 ">ss</span>[<span class="pl-s1 ">k</span>]
+                                    
+                                      <span class="pl-k ">return</span> <span class="pl-s1 ">json</span>.<span class="pl-en ">dumps</span>(<span class="pl-s1 ">scores</span>)</pre>
+                                            <div class="zeroclipboard-container position-absolute right-0 top-0 ">
+
+                                            </div>
+                                        </div>
+                                        <p dir="auto ">Still inside the <em>process()</em> function we can now send our result to elasticsearch and build a dashboard with kibana. The <em>sth2elastic()</em> function out of my <a href="/giannipiemonte/Project_Sentiment_Analysis/blob/main/code/ownelastic.py ">ownelastic.py</a>                                            will do the job for us but don't forget to config your Elastichost in this file.</p>
+                                        <div class="highlight highlight-source-python position-relative overflow-auto "><pre><span class="pl-s1 ">results</span> <span class="pl-c1 ">=</span> <span class="pl-s1 ">df</span>.<span class="pl-en
+                                ">toJSON</span>().<span class="pl-en ">map</span>(<span class="pl-k ">lambda</span> <span class="pl-s1 ">j</span>: <span class="pl-s1 ">json</span>.<span class="pl-en ">loads</span>(<span class="pl-s1 ">j</span>)).<span class="pl-en ">collect</span>()
+                                    <span class="pl-k ">for</span> <span class="pl-s1 ">result</span> <span class="pl-c1 ">in</span> <span class="pl-s1 ">results</span>:
+                                          <span class="pl-s1 ">result</span>[<span class="pl-s ">"date "</span>]<span class="pl-c1 ">=</span> <span class="pl-s1 ">datetime</span>.<span class="pl-en ">strptime</span>(<span class="pl-s1
+                                ">result</span>[<span class="pl-s ">"date "</span>],<span class="pl-s ">"%Y-%m-%d %H:%M:%S "</span>)
+                                          <span class="pl-s1 ">result</span>[<span class="pl-s ">"sentiment "</span>]<span class="pl-c1 ">=</span><span class="pl-s1 ">json</span>.<span class="pl-en ">loads</span>(<span class="pl-s1
+                                ">result</span>[<span class="pl-s ">"sentiment "</span>])
+                                          <span class="pl-en ">sth2elastic</span>(<span class="pl-s1 ">results</span>,<span class="pl-s ">"tweets "</span>,<span class="pl-s ">"doc "</span>)</pre>
+                                            <div class="zeroclipboard-container position-absolute right-0 top-0 ">
+
+                                            </div>
+                                        </div>
+                                        <p dir="auto ">Now the Tweets are saved inside the "tweets " Index of Elasticsearch and you can build a dashboard that refreshes every few seconds.</p>
+                                        <p dir="auto "><br>
+                                            <a target="_blank " rel="noopener noreferrer " href="/giannipiemonte/Project_Sentiment_Analysis/blob/main/KibanaTwitterdashboard.PNG "><img src="assets/img/modal portfolio/KibanaTwitterdashboard.jpg
+                                " width="800 " height="auto " style="max-width: 100%; "></a>
+                                        </p>
+                                    </article>
                                 </div>
                                 <button class="btn btn-primary btn-xl text-uppercase " data-bs-dismiss="modal " type="button ">
                                         <i class="fas fa-times me-1 "></i>
@@ -1612,7 +1762,848 @@
             </div>
         </div>
     </div>
+    <!-- Portfolio item 2 modal popup-->
+    <div class="portfolio-modal modal fade " id="portfolioModal2 " tabindex="-1 " role="dialog " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="close-modal " data-bs-dismiss="modal "><img src="assets/img/close-icon.svg " alt="Close modal " /></div>
+                <div class="container ">
+                    <div class="row justify-content-center ">
+                        <div class="col-lg-8 ">
+                            <div class="modal-body ">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase ">Nostradamovie</h2>
+                                <p class="item-intro text-muted ">La totalité ici :
+                                    <a href="https://github.com/giannipiemonte/Nostradamovies "> GitHub</a> Techno & Lib utilisées : NLTK | Sklearn | Scikit-Image | Tensorflow | Keras </p>
+                                <img class="img-fluid d-block mx-auto " src="assets/img/portfolio/2_Nostradamovie2.gif " alt="... " />
+                                <div class="justify-content-left ">
+                                    <article class="jp-Notebook " data-jp-theme-light="true " data-jp-theme-name="JupyterLab Light ">
+                                        <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown ">
+                                                        <h1 id="Importing-Neccessary-Libraries ">Importing Neccessary Libraries
+                                                            <a class="anchor-link " href="#Importing-Neccessary-Libraries "></a>
+                                                        </h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [1]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="kn ">import</span> <span class="nn ">tensorflow</span> <span class="k ">as</span> <span class="nn ">tf</span>
+                                                                <span class="kn ">from</span> <span class="nn ">tensorflow.keras</span> <span class="kn ">import</span> <span class="n ">Sequential</span>
+                                                                <span class="kn ">from</span> <span class="nn ">tensorflow.keras.layers</span> <span class="kn ">import</span> <span class="n ">Conv2D</span><span class="p ">,</span><span class="n
+                                ">MaxPool2D</span><span class="p ">,</span><span class="n ">Dense</span><span class="p ">,</span><span class="n ">Flatten</span><span class="p ">,</span><span class="n ">BatchNormalization</span><span class="p ">,</span><span class="n ">Dropout</span>
+                                                                <span class="kn ">from</span> <span class="nn ">tensorflow.keras.optimizers</span> <span class="kn ">import</span> <span class="n ">Adam</span>
+                                                                <span class="kn ">from</span> <span class="nn ">tensorflow.keras.preprocessing</span> <span class="kn ">import</span> <span class="n ">image</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [2]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="kn ">import</span> <span class="nn ">numpy</span> <span class="k ">as</span> <span class="nn ">np</span>
+                                                                <span class="kn ">import</span> <span class="nn ">pandas</span> <span class="k ">as</span> <span class="nn ">pd</span>
+                                                                <span class="kn ">import</span> <span class="nn ">matplotlib.pyplot</span> <span class="k ">as</span> <span class="nn ">plt</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [3]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="kn ">from</span> <span class="nn ">sklearn.model_selection</span> <span class="kn ">import</span> <span class="n ">train_test_split</span>
+                                                                <span class="kn ">from</span> <span class="nn ">tqdm</span> <span class="kn ">import</span> <span class="n ">tqdm</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown ">
+                                                        <h1 id="Reading-the-Dataset ">Reading the Dataset
+                                                            <a class="anchor-link " href="#Reading-the-Dataset "></a>
+                                                        </h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [4]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="n ">df</span> <span class="o ">=</span> <span class="n ">pd</span><span class="o ">.</span><span class="n
+                                ">read_csv</span><span class="p ">(</span><span class="s1 ">&#39;input/train.csv&#39;</span><span class="p ">)</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [5]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="c1 "># Taking 30 percentage of the dataset for this project as using whole dataset crashes the memory threshold of kaggle kernels</span>
+                                                                    <span class="n ">df</span> <span class="o ">=</span> <span class="n ">df</span><span class="o ">.</span><span class="n ">head</span><span class="p ">(</span><span class="mi
+                                ">2300</span><span class="p ">)</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [6]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="n ">df</span><span class="o ">.</span><span class="n ">head</span><span class="p ">()</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="jp-Cell-outputWrapper ">
+                                                <div class="jp-OutputArea jp-Cell-outputArea ">
+                                                    <div class="jp-OutputArea-child ">
+                                                        <div class="jp-OutputPrompt jp-OutputArea-prompt ">Out [6]:</div>
+                                                        <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult " data-mime-type="text/html ">
+                                                            <div>
+                                                                <style scoped>
+                                                                    .dataframe tbody tr th:only-of-type {
+                                                                        vertical-align: middle;
+                                                                    }
+                                                                    
+                                                                    .dataframe tbody tr th {
+                                                                        vertical-align: top;
+                                                                    }
+                                                                    
+                                                                    .dataframe thead th {
+                                                                        text-align: right;
+                                                                    }
+                                                                </style>
+                                                                <table class="dataframe ">
+                                                                    <thead>
+                                                                        <tr style="text-align: right; ">
+                                                                            <th></th>
+                                                                            <th>Id</th>
+                                                                            <th>Genre</th>
+                                                                            <th>Action</th>
+                                                                            <th>Adventure</th>
+                                                                            <th>Animation</th>
+                                                                            <th>Biography</th>
+                                                                            <th>Comedy</th>
+                                                                            <th>Crime</th>
+                                                                            <th>Documentary</th>
+                                                                            <th>Drama</th>
+                                                                            <th>...</th>
+                                                                            <th>N/A</th>
+                                                                            <th>News</th>
+                                                                            <th>Reality-TV</th>
+                                                                            <th>Romance</th>
+                                                                            <th>Sci-Fi</th>
+                                                                            <th>Short</th>
+                                                                            <th>Sport</th>
+                                                                            <th>Thriller</th>
+                                                                            <th>War</th>
+                                                                            <th>Western</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th>0</th>
+                                                                            <td>tt0086425</td>
+                                                                            <td>['Comedy', 'Drama']</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>1</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>1</td>
+                                                                            <td>...</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>1</th>
+                                                                            <td>tt0085549</td>
+                                                                            <td>['Drama', 'Romance', 'Music']</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>1</td>
+                                                                            <td>...</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>1</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>2</th>
+                                                                            <td>tt0086465</td>
+                                                                            <td>['Comedy']</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>1</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>...</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>3</th>
+                                                                            <td>tt0086567</td>
+                                                                            <td>['Sci-Fi', 'Thriller']</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>...</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>1</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>1</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>4</th>
+                                                                            <td>tt0086034</td>
+                                                                            <td>['Action', 'Adventure', 'Thriller']</td>
+                                                                            <td>1</td>
+                                                                            <td>1</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>...</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                            <td>1</td>
+                                                                            <td>0</td>
+                                                                            <td>0</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p>5 rows × 27 columns</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown ">
+                                                        <h1 id="Converting-the-images-into-Numpy-array-to-train-the-CNN ">Converting the images into Numpy array to train the CNN
+                                                            <a class="anchor-link " href="#Converting-the-images-into-Numpy-array-to-train-the-CNN "></a>
+                                                        </h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [7]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="n ">width</span> <span class="o ">=</span> <span class="mi ">350</span>
+                                                                <span class="n ">height</span> <span class="o ">=</span> <span class="mi ">350</span>
+                                                                <span class="n ">X</span> <span class="o ">=</span> <span class="p ">[]</span>
+                                                                <span class="k ">for</span> <span class="n ">i</span> <span class="ow ">in</span> <span class="n ">tqdm</span><span class="p ">(</span><span class="nb ">range</span><span class="p
+                                ">(</span><span class="n ">df</span><span class="o ">.</span><span class="n ">shape</span><span class="p ">[</span><span class="mi ">0</span><span class="p ">])):</span>
+                                                                <span class="n ">path</span> <span class="o ">=</span> <span class="s1 ">&#39;input/Images/&#39;</span><span class="o ">+</span><span class="n ">df</span><span class="p
+                                ">[</span><span class="s1 ">&#39;Id&#39;</span><span class="p ">][</span><span class="n ">i</span><span class="p ">]</span><span class="o ">+</span><span class="s1 ">&#39;.jpg&#39;</span>
+                                                                <span class="n ">img</span> <span class="o ">=</span> <span class="n ">image</span><span class="o ">.</span><span class="n ">load_img</span><span class="p ">(</span><span class="n
+                                ">path</span><span class="p ">,</span><span class="n ">target_size</span><span class="o ">=</span><span class="p ">(</span><span class="n ">width</span><span class="p ">,</span><span class="n ">height</span><span class="p ">,</span><span class="mi
+                                ">3</span><span class="p ">))</span>
+                                                                <span class="n ">img</span> <span class="o ">=</span> <span class="n ">image</span><span class="o ">.</span><span class="n ">img_to_array</span><span class="p ">(</span><span class="n
+                                ">img</span><span class="p ">)</span>
+                                                                <span class="n ">img</span> <span class="o ">=</span> <span class="n ">img</span><span class="o ">/</span><span class="mf ">255.0</span>
+                                                                <span class="n ">X</span><span class="o ">.</span><span class="n ">append</span><span class="p ">(</span><span class="n ">img</span><span class="p ">)</span>
+                                                                <span class="n ">X</span> <span class="o ">=</span> <span class="n ">np</span><span class="o ">.</span><span class="n ">array</span><span class="p ">(</span><span class="n
+                                ">X</span><span class="p ">)</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
+                                            <div class="jp-Cell-outputWrapper ">
+                                                <div class="jp-OutputArea jp-Cell-outputArea ">
+                                                    <div class="jp-OutputArea-child ">
+                                                        <div class="jp-RenderedText jp-OutputArea-output " data-mime-type="application/vnd.jupyter.stderr ">
+                                                            <pre>100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2300/2300 [00:13&lt;00:00, 173.16it/s]
+                                                            </pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [8]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="n ">X</span><span class="o ">.</span><span class="n ">shape</span>
+                                                            </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="jp-Cell-outputWrapper ">
+                                                <div class="jp-OutputArea jp-Cell-outputArea ">
+                                                    <div class="jp-OutputArea-child ">
+                                                        <div class="jp-OutputPrompt jp-OutputArea-prompt ">Out [8]:</div>
+                                                        <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult " data-mime-type="text/plain ">
+                                                            <pre>(2300, 350, 350, 3)</pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [9]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="n ">y</span> <span class="o ">=</span> <span class="n ">df</span><span class="o ">.</span><span class="n ">drop</span><span class="p
+                                ">([</span><span class="s1 ">&#39;Id&#39;</span><span class="p ">,</span><span class="s1 ">&#39;Genre&#39;</span><span class="p ">],</span><span class="n ">axis</span><span class="o ">=</span><span class="mi ">1</span><span class="p ">)</span>
+                                                                <span class="n ">y</span> <span class="o ">=</span> <span class="n ">y</span><span class="o ">.</span><span class="n ">to_numpy</span><span class="p ">()</span>
+                                                                <span class="n ">y</span><span class="o ">.</span><span class="n ">shape</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="jp-Cell-outputWrapper ">
+                                                <div class="jp-OutputArea jp-Cell-outputArea ">
+                                                    <div class="jp-OutputArea-child ">
+                                                        <div class="jp-OutputPrompt jp-OutputArea-prompt ">Out [9]:</div>
+                                                        <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult " data-mime-type="text/plain ">
+                                                            <pre>(2300, 25)</pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [10]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="n ">X_train</span><span class="p ">,</span><span class="n ">X_test</span><span class="p ">,</span><span class="n
+                                ">y_train</span><span class="p ">,</span><span class="n ">y_test</span><span class="o ">=</span><span class="n ">train_test_split</span><span class="p ">(</span><span class="n ">X</span><span class="p ">,</span><span class="n ">y</span><span class="p
+                                ">,</span><span class="n ">test_size</span><span class="o ">=</span><span class="mf ">0.1</span><span class="p ">)</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown ">
+                                                        <h1 id="Preparing-the-model ">Preparing the model
+                                                            <a class="anchor-link " href="#Preparing-the-model "></a>
+                                                        </h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [11]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="n ">model</span> <span class="o ">=</span> <span class="n ">Sequential</span><span class="p ">()</span>
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">Conv2D</span><span class="p ">(</span><span class="mi
+                                ">16</span><span class="p ">,</span><span class="n ">kernel_size</span><span class="o ">=</span><span class="p ">(</span><span class="mi ">3</span><span class="p ">,</span><span class="mi ">3</span><span class="p ">),</span><span class="n
+                                ">activation</span><span class="o ">=</span><span class="s1 ">&#39;relu&#39;</span><span class="p ">,</span><span class="n ">input_shape</span><span class="o ">=</span><span class="n ">X_train</span><span class="p ">[</span><span class="mi
+                                ">0</span><span class="p ">]</span><span class="o ">.</span><span class="n ">shape</span><span class="p ">))</span>
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">BatchNormalization</span><span class="p ">())</span>
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">MaxPool2D</span><span class="p ">(</span><span class="mi
+                                ">2</span><span class="p ">,</span><span class="mi ">2</span><span class="p ">))</span>
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">Dropout</span><span class="p ">(</span><span class="mf
+                                ">0.3</span><span class="p ">))</span>                                            
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">Conv2D</span><span class="p ">(</span><span class="mi
+                                ">32</span><span class="p ">,</span><span class="n ">kernel_size</span><span class="o ">=</span><span class="p ">(</span><span class="mi ">3</span><span class="p ">,</span><span class="mi ">3</span><span class="p ">),</span><span class="n
+                                ">activation</span><span class="o ">=</span><span class="s1 ">&#39;relu&#39;</span><span class="p ">))</span>
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">BatchNormalization</span><span class="p ">())</span>
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">MaxPool2D</span><span class="p ">(</span><span class="mi
+                                ">2</span><span class="p ">,</span><span class="mi ">2</span><span class="p ">))</span>
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">Dropout</span><span class="p ">(</span><span class="mf
+                                ">0.3</span><span class="p ">))</span>                                          
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">Conv2D</span><span class="p ">(</span><span class="mi
+                                ">64</span><span class="p ">,</span><span class="n ">kernel_size</span><span class="o ">=</span><span class="p ">(</span><span class="mi ">3</span><span class="p ">,</span><span class="mi ">3</span><span class="p ">),</span><span class="n
+                                ">activation</span><span class="o ">=</span><span class="s1 ">&#39;relu&#39;</span><span class="p ">))</span>
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">BatchNormalization</span><span class="p ">())</span>
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">MaxPool2D</span><span class="p ">(</span><span class="mi
+                                ">2</span><span class="p ">,</span><span class="mi ">2</span><span class="p ">))</span>
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">Dropout</span><span class="p ">(</span><span class="mf
+                                ">0.4</span><span class="p ">))</span>                                            
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">Flatten</span><span class="p ">())</span>  
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">Dense</span><span class="p ">(</span><span class="mi
+                                ">128</span><span class="p ">,</span><span class="n ">activation</span><span class="o ">=</span><span class="s1 ">&#39;relu&#39;</span><span class="p ">))</span>
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">BatchNormalization</span><span class="p ">())</span>
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">Dropout</span><span class="p ">(</span><span class="mf
+                                ">0.5</span><span class="p ">))</span>
+                                                                <span class="n ">model</span><span class="o ">.</span><span class="n ">add</span><span class="p ">(</span><span class="n ">Dense</span><span class="p ">(</span><span class="mi
+                                ">25</span><span class="p ">,</span><span class="n ">activation</span><span class="o ">=</span><span class="s1 ">&#39;sigmoid&#39;</span><span class="p ">))</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [12]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="n ">model</span><span class="o ">.</span><span class="n ">summary</span><span class="p ">()</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="jp-Cell-outputWrapper ">
+                                                <div class="jp-OutputArea jp-Cell-outputArea ">
+                                                    <div class="jp-OutputArea-child ">
+                                                        <div class="jp-OutputPrompt jp-OutputArea-prompt ">Out [12]</div>
+                                                        <div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain ">
+                                                            <pre>Model: &#34;sequential&#34;
+                                            _________________________________________________________________
+                                             Layer (type)                Output Shape              Param #   
+                                            =================================================================
+                                             conv2d (Conv2D)             (None, 348, 348, 16)      448       
+                                                                                                             
+                                             batch_normalization (BatchN  (None, 348, 348, 16)     64        
+                                             ormalization)                                                   
+                                                                                                             
+                                             max_pooling2d (MaxPooling2D  (None, 174, 174, 16)     0         
+                                             )                                                               
+                                                                                                             
+                                             dropout (Dropout)           (None, 174, 174, 16)      0         
+                                                                                                             
+                                             conv2d_1 (Conv2D)           (None, 172, 172, 32)      4640      
+                                                                                                             
+                                             batch_normalization_1 (Batc  (None, 172, 172, 32)     128       
+                                             hNormalization)                                                 
+                                                                                                             
+                                             max_pooling2d_1 (MaxPooling  (None, 86, 86, 32)       0         
+                                             2D)                                                             
+                                                                                                             
+                                             dropout_1 (Dropout)         (None, 86, 86, 32)        0         
+                                                                                                             
+                                             conv2d_2 (Conv2D)           (None, 84, 84, 64)        18496     
+                                                                                                             
+                                             batch_normalization_2 (Batc  (None, 84, 84, 64)       256       
+                                             hNormalization)                                                 
+                                                                                                             
+                                             max_pooling2d_2 (MaxPooling  (None, 42, 42, 64)       0         
+                                             2D)                                                             
+                                                                                                             
+                                             dropout_2 (Dropout)         (None, 42, 42, 64)        0         
+                                                                                                             
+                                             flatten (Flatten)           (None, 112896)            0         
+                                                                                                             
+                                             dense (Dense)               (None, 128)               14450816  
+                                                                                                             
+                                             batch_normalization_3 (Batc  (None, 128)              512       
+                                             hNormalization)                                                 
+                                                                                                             
+                                             dropout_3 (Dropout)         (None, 128)               0         
+                                                                                                             
+                                             dense_1 (Dense)             (None, 25)                3225      
+                                                                                                             
+                                            =================================================================
+                                            Total params: 14,478,585
+                                            Trainable params: 14,478,105
+                                            Non-trainable params: 480
+                                            _________________________________________________________________
+                                                            </pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [13]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="n ">model</span><span class="o ">.</span><span class="n ">compile</span><span class="p ">(</span><span class="n
+                                ">optimizer</span><span class="o ">=</span><span class="s1 ">&#39;adam&#39;</span><span class="p ">,</span><span class="n ">loss</span><span class="o ">=</span><span class="s1 ">&#39;binary_crossentropy&#39;</span><span class="p ">,</span><span class="n
+                                ">metrics</span><span class="o ">=</span><span class="p ">[</span><span class="s1 ">&#39;accuracy&#39;</span><span class="p ">])</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [14]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="n ">history</span> <span class="o ">=</span> <span class="n ">model</span><span class="o ">.</span><span class="n
+                                ">fit</span><span class="p ">(</span><span class="n ">X_train</span><span class="p ">,</span><span class="n ">y_train</span><span class="p ">,</span><span class="n ">epochs</span><span class="o ">=</span><span class="mi ">5</span><span class="p
+                                ">,</span><span class="n ">validation_data</span><span class="o ">=</span><span class="p ">(</span><span class="n ">X_test</span><span class="p ">,</span><span class="n ">y_test</span><span class="p ">))</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="jp-Cell-outputWrapper ">
+                                                <div class="jp-OutputArea jp-Cell-outputArea ">
+                                                    <div class="jp-OutputArea-child ">
+                                                        <div class="jp-OutputPrompt jp-OutputArea-prompt ">Out [15]</div>
+                                                        <div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain ">
+                                                            <pre>Epoch 1/5
+                                                                    65/65 [==============================] - 251s 4s/step - loss: 0.8067 - accuracy: 0.0889 - val_loss: 3.8348 - val_accuracy: 0.0130
+                                                                    Epoch 2/5
+                                                                    65/65 [==============================] - 207s 3s/step - loss: 0.5950 - accuracy: 0.1744 - val_loss: 1.6057 - val_accuracy: 0.1652
+                                                                    Epoch 3/5
+                                                                    65/65 [==============================] - 206s 3s/step - loss: 0.3680 - accuracy: 0.3005 - val_loss: 0.3302 - val_accuracy: 0.2609
+                                                                    Epoch 4/5
+                                                                    65/65 [==============================] - 205s 3s/step - loss: 0.2698 - accuracy: 0.3435 - val_loss: 0.3031 - val_accuracy: 0.2217
+                                                                    Epoch 5/5
+                                                                    65/65 [==============================] - 187s 3s/step - loss: 0.2445 - accuracy: 0.3546 - val_loss: 0.2593 - val_accuracy: 0.2217
+                                                            </pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [15]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="k ">def</span> <span class="nf ">plotLearningCurve</span><span class="p ">(</span><span class="n ">history</span><span class="p
+                                ">,</span><span class="n ">epochs</span><span class="p ">):</span>
+                                                                <span class="n ">epochRange</span> <span class="o ">=</span> <span class="nb ">range</span><span class="p ">(</span><span class="mi ">1</span><span class="p ">,</span><span class="n
+                                ">epochs</span><span class="o ">+</span><span class="mi ">1</span><span class="p ">)</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">plot</span><span class="p ">(</span><span class="n ">epochRange</span><span class="p ">,</span><span class="n
+                                ">history</span><span class="o ">.</span><span class="n ">history</span><span class="p ">[</span><span class="s1 ">&#39;accuracy&#39;</span><span class="p ">])</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">plot</span><span class="p ">(</span><span class="n ">epochRange</span><span class="p ">,</span><span class="n
+                                ">history</span><span class="o ">.</span><span class="n ">history</span><span class="p ">[</span><span class="s1 ">&#39;val_accuracy&#39;</span><span class="p ">])</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">title</span><span class="p ">(</span><span class="s1 ">&#39;Model Accuracy&#39;</span><span class="p ">)</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">xlabel</span><span class="p ">(</span><span class="s1 ">&#39;Epoch&#39;</span><span class="p ">)</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">ylabel</span><span class="p ">(</span><span class="s1 ">&#39;Accuracy&#39;</span><span class="p ">)</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">legend</span><span class="p ">([</span><span class="s1 ">&#39;Train&#39;</span><span class="p
+                                ">,</span><span class="s1 ">&#39;Validation&#39;</span><span class="p ">],</span><span class="n ">loc</span><span class="o ">=</span><span class="s1 ">&#39;best&#39;</span><span class="p ">)</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">show</span><span class="p ">()</span>                                                                
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">plot</span><span class="p ">(</span><span class="n ">epochRange</span><span class="p ">,</span><span class="n
+                                ">history</span><span class="o ">.</span><span class="n ">history</span><span class="p ">[</span><span class="s1 ">&#39;loss&#39;</span><span class="p ">])</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">plot</span><span class="p ">(</span><span class="n ">epochRange</span><span class="p ">,</span><span class="n
+                                ">history</span><span class="o ">.</span><span class="n ">history</span><span class="p ">[</span><span class="s1 ">&#39;val_loss&#39;</span><span class="p ">])</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">title</span><span class="p ">(</span><span class="s1 ">&#39;Model Loss&#39;</span><span class="p ">)</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">xlabel</span><span class="p ">(</span><span class="s1 ">&#39;Epoch&#39;</span><span class="p ">)</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">ylabel</span><span class="p ">(</span><span class="s1 ">&#39;Loss&#39;</span><span class="p ">)</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">legend</span><span class="p ">([</span><span class="s1 ">&#39;Train&#39;</span><span class="p
+                                ">,</span><span class="s1 ">&#39;Validation&#39;</span><span class="p ">],</span><span class="n ">loc</span><span class="o ">=</span><span class="s1 ">&#39;best&#39;</span><span class="p ">)</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">show</span><span class="p ">()</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [16]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="n ">plotLearningCurve</span><span class="p ">(</span><span class="n ">history</span><span class="p ">,</span><span class="mi
+                                ">5</span><span class="p ">)</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="jp-Cell-outputWrapper ">
+                                                <div class="jp-OutputArea jp-Cell-outputArea ">
+                                                    <div class="jp-OutputArea-child ">
+                                                        <div class="jp-OutputPrompt jp-OutputArea-prompt ">Out [16]</div>
+                                                        <div class="jp-RenderedImage jp-OutputArea-output ">
+                                                            <img src="assets/img/modal portfolio/nostraplot.png " alt="... " class=" jp-needs-light-background ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown ">
+                                                        <h1 id="Applying-the-trained-model-to-Predict-the-Genre-of-the-input-image ">Applying the trained model to Predict the Genre of the input image<a class="anchor-link " href="#Applying-the-trained-model-to-Predict-the-Genre-of-the-input-image ">&#182;</a></h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [18]:</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="n ">img</span> <span class="o ">=</span> <span class="n ">image</span><span class="o ">.</span><span class="n
+                                ">load_img</span><span class="p ">(</span><span class="s1 ">&#39;input/Images/tt0084058.jpg&#39;</span><span class="p ">,</span><span class="n ">target_size</span><span class="o ">=</span><span class="p ">(</span><span class="n
+                                ">width</span><span class="p ">,</span><span class="n ">height</span><span class="p ">,</span><span class="mi ">3</span><span class="p ">))</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">imshow</span><span class="p ">(</span><span class="n ">img</span><span class="p ">)</span>
+                                                                <span class="n ">img</span> <span class="o ">=</span> <span class="n ">image</span><span class="o ">.</span><span class="n ">img_to_array</span><span class="p ">(</span><span class="n
+                                ">img</span><span class="p ">)</span>
+                                                                <span class="n ">img</span> <span class="o ">=</span> <span class="n ">img</span><span class="o ">/</span><span class="mf ">255.0</span>
+                                                                <span class="n ">img</span> <span class="o ">=</span> <span class="n ">img</span><span class="o ">.</span><span class="n ">reshape</span><span class="p ">(</span><span class="mi
+                                ">1</span><span class="p ">,</span><span class="n ">width</span><span class="p ">,</span><span class="n ">height</span><span class="p ">,</span><span class="mi ">3</span><span class="p ">)</span>
+                                                                <span class="n ">classes</span> <span class="o ">=</span> <span class="n ">df</span><span class="o ">.</span><span class="n ">columns</span><span class="p ">[</span><span class="mi
+                                ">2</span><span class="p ">:]</span>
+                                                                <span class="n ">y_pred</span> <span class="o ">=</span> <span class="n ">model</span><span class="o ">.</span><span class="n ">predict</span><span class="p ">(</span><span class="n
+                                ">img</span><span class="p ">)</span>
+                                                                <span class="n ">top3</span><span class="o ">=</span><span class="n ">np</span><span class="o ">.</span><span class="n ">argsort</span><span class="p ">(</span><span class="n
+                                ">y_pred</span><span class="p ">[</span><span class="mi ">0</span><span class="p ">])[:</span><span class="o ">-</span><span class="mi ">4</span><span class="p ">:</span><span class="o ">-</span><span class="mi ">1</span><span class="p ">]</span>
+                                                                <span class="k ">for</span> <span class="n ">i</span> <span class="ow ">in</span> <span class="nb ">range</span><span class="p ">(</span><span class="mi ">3</span><span class="p ">):</span>
+                                                                <span class="nb ">print</span><span class="p ">(</span><span class="n ">classes</span><span class="p ">[</span><span class="n ">top3</span><span class="p ">[</span><span class="n
+                                ">i</span><span class="p ">]])</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="jp-Cell-outputWrapper ">
+                                                <div class="jp-OutputArea jp-Cell-outputArea ">
+                                                    <div class="jp-OutputArea-child ">
+                                                        <div class="jp-OutputPrompt jp-OutputArea-prompt ">Out [18]</div>
+                                                        <div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain ">
+                                                            <pre>Drama
+                                                                Adventure
+                                                                Romance
+                                                            </pre>
+                                                        </div>
+                                                    </div>
+                                                    <div class="jp-OutputArea-child ">
+                                                        <div class="jp-RenderedImage jp-OutputArea-output ">
+                                                            <img src="assets/img/modal portfolio/nostra1.png " alt="... " class=" jp-needs-light-background ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [19]</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 "><pre><span class="n ">img</span> <span class="o ">=</span> <span class="n ">image</span><span class="o ">.</span><span class="n
+                                ">load_img</span><span class="p ">(</span><span class="s1 ">&#39;input/Images/tt0085333.jpg&#39;</span><span class="p ">,</span><span class="n ">target_size</span><span class="o ">=</span><span class="p ">(</span><span class="n
+                                ">width</span><span class="p ">,</span><span class="n ">height</span><span class="p ">,</span><span class="mi ">3</span><span class="p ">))</span>
+                                                                <span class="n ">plt</span><span class="o ">.</span><span class="n ">imshow</span><span class="p ">(</span><span class="n ">img</span><span class="p ">)</span>
+                                                                <span class="n ">img</span> <span class="o ">=</span> <span class="n ">image</span><span class="o ">.</span><span class="n ">img_to_array</span><span class="p ">(</span><span class="n
+                                ">img</span><span class="p ">)</span>
+                                                                <span class="n ">img</span> <span class="o ">=</span> <span class="n ">img</span><span class="o ">/</span><span class="mf ">255.0</span>
+                                                                <span class="n ">img</span> <span class="o ">=</span> <span class="n ">img</span><span class="o ">.</span><span class="n ">reshape</span><span class="p ">(</span><span class="mi
+                                ">1</span><span class="p ">,</span><span class="n ">width</span><span class="p ">,</span><span class="n ">height</span><span class="p ">,</span><span class="mi ">3</span><span class="p ">)</span>
+                                                                <span class="n ">classes</span> <span class="o ">=</span> <span class="n ">df</span><span class="o ">.</span><span class="n ">columns</span><span class="p ">[</span><span class="mi
+                                ">2</span><span class="p ">:]</span>
+                                                                <span class="n ">y_pred</span> <span class="o ">=</span> <span class="n ">model</span><span class="o ">.</span><span class="n ">predict</span><span class="p ">(</span><span class="n
+                                ">img</span><span class="p ">)</span>
+                                                                <span class="n ">top3</span><span class="o ">=</span><span class="n ">np</span><span class="o ">.</span><span class="n ">argsort</span><span class="p ">(</span><span class="n
+                                ">y_pred</span><span class="p ">[</span><span class="mi ">0</span><span class="p ">])[:</span><span class="o ">-</span><span class="mi ">4</span><span class="p ">:</span><span class="o ">-</span><span class="mi ">1</span><span class="p ">]</span>
+                                                                <span class="k ">for</span> <span class="n ">i</span> <span class="ow ">in</span> <span class="nb ">range</span><span class="p ">(</span><span class="mi ">3</span><span class="p ">):</span>
+                                                                <span class="nb ">print</span><span class="p ">(</span><span class="n ">classes</span><span class="p ">[</span><span class="n ">top3</span><span class="p ">[</span><span class="n
+                                ">i</span><span class="p ">]])</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="jp-Cell-outputWrapper ">
+                                                <div class="jp-OutputArea jp-Cell-outputArea ">
+                                                    <div class="jp-OutputArea-child ">
+                                                        <div class="jp-OutputPrompt jp-OutputArea-prompt ">Out [19]</div>
+                                                        <div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain ">
+                                                            <pre>Drama
+                                                                Action
+                                                                Fantasy
+                                                            </pre>
+                                                        </div>
+                                                    </div>
+                                                    <div class="jp-OutputArea-child ">
+                                                        <div class="jp-RenderedImage jp-OutputArea-output ">
+                                                            <img src="assets/img/modal portfolio/nostra2.png " alt="... " class=" jp-needs-light-background ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-Cell jp-CodeCell jp-Notebook-cell ">
+                                            <div class="jp-Cell-inputWrapper ">
+                                                <div class="jp-InputArea jp-Cell-inputArea ">
+                                                    <div class="jp-InputPrompt jp-InputArea-prompt ">In [20]</div>
+                                                    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor " data-type="inline ">
+                                                        <div class="CodeMirror cm-s-jupyter ">
+                                                            <div class=" highlight hl-ipython3 ">
+                                                                <pre><span class="n ">img</span> <span class="o ">=</span> <span class="n ">image</span><span class="o ">.</span><span class="n ">load_img</span><span class="p ">(</span><span class="s1
+                                ">&#39;input/Images/tt0086461.jpg&#39;</span><span class="p ">,</span><span class="n ">target_size</span><span class="o ">=</span><span class="p ">(</span><span class="n ">width</span><span class="p ">,</span><span class="n ">height</span><span class="p ">,</span><span class="mi
+                                ">3</span><span class="p ">))</span>
+                                                                    <span class="n ">plt</span><span class="o ">.</span><span class="n ">imshow</span><span class="p ">(</span><span class="n ">img</span><span class="p ">)</span>
+                                                                    <span class="n ">img</span> <span class="o ">=</span> <span class="n ">image</span><span class="o ">.</span><span class="n ">img_to_array</span><span class="p
+                                ">(</span><span class="n ">img</span><span class="p ">)</span>
+                                                                    <span class="n ">img</span> <span class="o ">=</span> <span class="n ">img</span><span class="o ">/</span><span class="mf ">255.0</span>
+                                                                    <span class="n ">img</span> <span class="o ">=</span> <span class="n ">img</span><span class="o ">.</span><span class="n ">reshape</span><span class="p ">(</span><span class="mi
+                                ">1</span><span class="p ">,</span><span class="n ">width</span><span class="p ">,</span><span class="n ">height</span><span class="p ">,</span><span class="mi ">3</span><span class="p ">)</span>
+                                                                    <span class="n ">classes</span> <span class="o ">=</span> <span class="n ">df</span><span class="o ">.</span><span class="n ">columns</span><span class="p ">[</span><span class="mi
+                                ">2</span><span class="p ">:]</span>
+                                                                    <span class="n ">y_pred</span> <span class="o ">=</span> <span class="n ">model</span><span class="o ">.</span><span class="n ">predict</span><span class="p ">(</span><span class="n
+                                ">img</span><span class="p ">)</span>
+                                                                    <span class="n ">top3</span><span class="o ">=</span><span class="n ">np</span><span class="o ">.</span><span class="n ">argsort</span><span class="p ">(</span><span class="n
+                                ">y_pred</span><span class="p ">[</span><span class="mi ">0</span><span class="p ">])[:</span><span class="o ">-</span><span class="mi ">4</span><span class="p ">:</span><span class="o ">-</span><span class="mi ">1</span><span class="p ">]</span>
+                                                                    <span class="k ">for</span> <span class="n ">i</span> <span class="ow ">in</span> <span class="nb ">range</span><span class="p ">(</span><span class="mi ">3</span><span class="p ">):</span>
+                                                                    <span class="nb ">print</span><span class="p ">(</span><span class="n ">classes</span><span class="p ">[</span><span class="n ">top3</span><span class="p ">[</span><span class="n
+                                ">i</span><span class="p ">]])</span>
+                                                                </pre>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="jp-Cell-outputWrapper ">
+                                                <div class="jp-OutputArea jp-Cell-outputArea ">
+                                                    <div class="jp-OutputArea-child ">
+                                                        <div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain ">
+                                                            <pre>Drama
+                                                                Thriller
+                                                                Fantasy
+                                                            </pre>
+                                                        </div>
+                                                    </div>
+                                                    <div class="jp-OutputArea-child ">
+                                                        <div class="jp-RenderedImage jp-OutputArea-output ">
+                                                            <img src="assets/img/modal portfolio/nostra3.png " alt="... " class=" jp-needs-light-background ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <button class="btn btn-primary btn-xl text-uppercase " data-bs-dismiss="modal " type="button ">
+                                        <i class="fas fa-times me-1 "></i>
+                                        Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js "></script>
