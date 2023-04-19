@@ -11288,6 +11288,19 @@ header.masthead .masthead-heading {
     }
 }
 
+#powerbi .powerbi-item {
+    max-width: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#powerbi .powerbi-item .powerbi-iframe{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+
 #portfolio .portfolio-item {
     max-width: 26rem;
     margin-left: auto;
@@ -11600,6 +11613,7 @@ header.masthead .masthead-heading {
 .img-brand {
     height: 2.75rem;
 }
+
 
 section#contact {
     background-color: #212529;
