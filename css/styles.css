@@ -11294,7 +11294,7 @@ header.masthead .masthead-heading {
     margin-right: auto;
 }
 
-#powerbi .powerbi-item .powerbi-iframe{
+#powerbi .powerbi-item #powerbi-iframe{
     position: relative;
     display: block;
     margin: 0 auto;
