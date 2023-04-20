@@ -11288,6 +11288,12 @@ header.masthead .masthead-heading {
     }
 }
 
+.pbi_ancienne{
+    position: relative; 
+    left: -240px;
+    align-items: left;
+}
+
 #powerbi .powerbi-item {
     max-width: 26rem;
     margin-left: auto;
